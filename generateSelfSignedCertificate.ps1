@@ -1,6 +1,6 @@
 param (
-    [string]$name= "www.whattttttttttttttt.com",    
-    [Parameter(Mandatory=$true)][string]$password = $( Read-Host "Enter password (required)" )    
+    [Parameter(Mandatory=$true)][string]$name= $( Read-Host "Enter Certificate name (required)" ),    
+    [Parameter(Mandatory=$true)][string]$password = $( Read-Host "Enter password (required)" )   
 )
 
 Write-Host "Generating Self Signed certificate..."
